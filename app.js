@@ -59,6 +59,7 @@ app.use((req, res, next) => {
   res.sendError = error => {
     log.error('Error before sending response: ', error);
     // Detect an error throw by Assets360 or default error message
+    // eslint-disable-next-line no-prototype-builtins
     if (error && error.hasOwnProperty('httpCode')) {
       return res.status(error.httpCode).send(error);
     }

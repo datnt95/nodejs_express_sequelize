@@ -1,6 +1,6 @@
 {
   "authorKey": "Bearer ",
-  "baseUrl": "/assets360/sync",
+  "baseUrl": "/synchronizer",
   "dbConfig": {
     "host": "127.0.0.1",
     "userName": "datnguyen",
