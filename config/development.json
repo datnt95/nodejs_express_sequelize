@@ -1,0 +1,25 @@
+{
+  "authorKey": "Bearer ",
+  "baseUrl": "/assets360/sync",
+  "dbConfig": {
+    "host": "127.0.0.1",
+    "userName": "datnguyen",
+    "password": "postgres",
+    "databaseName": "assets360"
+  },
+  "logConfig": {
+    "appenders": {
+      "sync": {
+        "type": "console"
+      }
+    },
+    "categories": {
+      "default": {
+        "appenders": [
+          "sync"
+        ],
+        "level": "ALL"
+      }
+    }
+  }
+}
